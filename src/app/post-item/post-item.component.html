@@ -1,0 +1,20 @@
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" >
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      </button>
+    </h2>
+    <div  class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>{{title}}</strong>
+        <br> {{contenu}}
+      </div>
+
+    </div>
+  </div>
+</div>&nbsp;&nbsp;
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+<button type="button" class="btn btn-outline-success" ng-click="updatepost(posts)">Editer</button> &nbsp;&nbsp;
+<button (click)="deletePost(id)">Supprimer</button>
+&nbsp;&nbsp;
+</div><br>
